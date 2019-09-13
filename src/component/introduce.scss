@@ -1,0 +1,137 @@
+.introduce-view {
+    overflow: hidden;
+
+    .introduce {
+        width: 1200px;
+        height: 300px;
+        margin: 31px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .introduce-left {
+            height: 100%;
+            width: 850px;
+            box-shadow: 0 0 15px 0 rgba(31, 56, 88, 0.08);
+            border-radius: 3px;
+            position: relative;
+
+            .introduce-left-title {
+                height: 49px;
+                border-bottom: 1px solid rgba(31, 56, 88, 0.06);
+                line-height: 49px;
+                padding: 0 14px;
+                background: white;
+                font-size: 14px;
+                color: #000000;
+                z-index: 2;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-weight: 800;
+
+                .introduce-left-title-style {
+                    font-size: 14px;
+                    color: rgba(31, 56, 88, 0.60);
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+
+            .introduce-left-list-view {
+                position: relative;
+                width: 850px;
+                height: 250px;
+                overflow: hidden;
+
+                .introduce-left-list {
+                    width: 850px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    position: absolute;
+                    left: 0;
+
+                    .introduce-left-list-offer {
+                        padding: 0 14px;
+                        width: 822px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        height: 50px;
+
+                        .offer-job {
+                            float: left;
+                            color: #3C99D8;
+                            cursor: pointer;
+                            font-size: 14px;
+                            width: 400px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            margin-right: 82px;
+                        }
+
+                        .offer-city {
+                            float: right;
+                            font-style: normal;
+                            font-size: 14px;
+                            color: rgba(0, 0, 0, 0.60);
+                            margin-right: 70px;
+                            width: 202px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                        .offer-time {
+                            font-style: normal;
+                            float: right;
+                            width: 80px;
+                            text-align: right;
+                            font-size: 14px;
+                            color: rgba(31, 56, 88, 0.60);
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .introduce-right {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            a {
+                width: 300px;
+                height: 140px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: noWrap;
+                justify-content: center;
+                align-items: center;
+                background: #FFFFFF;
+                box-shadow: 0 0 15px 0 rgba(31, 56, 88, 0.08);
+                border-radius: 3px;
+                padding: 0 16px;
+                cursor: pointer;
+                z-index: 4;
+
+                div {
+                    max-width: 300px;
+                    max-height: 140px;
+                    width: 300px;
+                    height: 140px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

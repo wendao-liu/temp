@@ -1,0 +1,117 @@
+/* head:S */
+.head {
+    background-color: #2C2F33;
+    height: 52px;
+    overflow: hidden;
+}
+
+.head .head-main {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: PingFangSC-Regular;
+}
+
+.head .logo {
+    text-indent: -9999em;
+    display: block;
+    width: 165px;
+    height: 20px;
+    margin-top: 16px;
+    float: left;
+}
+
+.head .head-menu {
+    width: 100%;
+    float: right;
+}
+
+.head .head-menu li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    z-index: 2;
+}
+
+.head .head-menu li a {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    line-height: 52px;
+    padding: 10px 15px;
+    margin-left: 4px;
+}
+
+.head .head-menu li.line {
+    /*border-right: 1px solid #fff; */
+}
+
+/*.head .head-menu li.current a,.head .head-menu li a:hover{  background-color: #FA7F02; text-decoration: none;}*/
+.head .head-menu li.back {
+    position: absolute;
+    height: 52px;
+    background-color: #FA7F02;
+    z-index: 1;
+}
+
+.head .login {
+    width: 340px;
+    float: right;
+    line-height: 52px;
+    color: #fff;
+    text-align: right;
+}
+
+.head .login a {
+    color: #fff;
+}
+
+.head .login .user-name {
+    max-width: 136px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head .head-menu .current-cat a {
+    color: #F37327;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    font-family: PingFangSC-Regular;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 52px;
+    margin: inherit;
+    padding: inherit;
+}
+
+#menu li a:hover {
+    color: #F37327;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.head-menu a {
+    font-family: PingFangSC-Regular;
+}
+
+/* head:E */
+
+.newPosition-content {
+    font-family: PingFangSC-Regular;
+}
+
+.newPosition-content a {
+    font-family: PingFangSC-Regular;
+}
+
+.more-positon {
+    font-family: PingFangSC-Medium
+}

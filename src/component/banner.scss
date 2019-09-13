@@ -1,0 +1,110 @@
+.banner-view {
+    background-positon: center;
+    background-color: #fff;
+    background-size: cover;
+    height: 478px;
+    position: relative;
+
+    .banner-view-marsk {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 478px;
+        background: rgba(31, 56, 88, 0.40);
+    }
+
+    .banner {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 478px;
+        padding: 300px 0 0;
+        position: relative;
+
+        .banner-en-first-title,
+        .banner-en-second-title,
+        .banner-zh-title {
+            position: absolute;
+            left: 355px;
+            font-size: 54px;
+            color: #fff;
+            line-height: 56px;
+            font-family: Rufina-Bold;
+            font-weight: 800
+        }
+
+        .banner-en-first-title {
+            top: 96px;
+        }
+
+        .banner-en-second-title {
+            top: 153px;
+        }
+
+        .banner-zh-title {
+            top: 216px;
+            font-size: 34px;
+            font-weight: 400
+        }
+
+        .banner-search {
+            width: 490px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 10px;
+            margin-bottom: 14px;
+
+            .banner-search-input {
+                width: 368px;
+                height: 40px;
+                border-radius: 3px;
+                line-height: 40px;
+                text-indent: 10px;
+                font-size: 14px;
+                border: inherit;
+                margin-right: 10px;
+            }
+
+            .banner-search-btn {
+                color: #fff;
+                background: #F37327;
+                font-size: 14px;
+                font-family: PingFangSC-Regular;
+                width: 92px;
+                height: 40px;
+                border-radius: 3px;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+
+        .banner-search-history {
+            max-width: 490px;
+            padding: 0 46px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .banner-search-history-offer {
+                padding: 0 5px;
+                margin-bottom: 5px;
+                color: rgba(255, 255, 255, 0.80);
+                font-family: PingFangSC-Regular;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    color: #F37327;
+                }
+            }
+        }
+    }
+}
