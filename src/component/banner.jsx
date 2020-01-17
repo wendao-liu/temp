@@ -1,6 +1,9 @@
 import React from 'react';
 import { Input } from 'antd';
-import './banner.scss'
+import './banner.scss';
+import $ from 'jquery';
+import { api } from '../utils/server.js';
+
 
 const images = {
     bg: 'https://img.alicdn.com/tfs/TB14TEEm7CWBuNjy0FaXXXUlXXa-1440-478.png'
@@ -37,7 +40,10 @@ class Banner extends React.Component {
 
     handleBtnClick = () => {
         const { inputValue } = this.state;
-        console.log("加入搜索接口")
+
+        api({url: '/users/login', method: 'POST', param: {name: '123', pass: '222'}}).then((data) => {
+            alert(data);
+        }); 
     }
 
     render() {

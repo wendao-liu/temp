@@ -13,7 +13,9 @@ const styles = {
 
 const Foot = () => {
     return (
-        <div style={styles}>阿里巴巴集团 Copyright ©1999-2019 版权所有</div>
+        <div style={styles}>
+            <a href='http://www.beian.miit.gov.cn/'>浙ICP备19012132号-1</a>
+        </div>
     )
 }
 
